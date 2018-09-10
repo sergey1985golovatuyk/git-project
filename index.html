@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maserati Web Site</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/style.css"/>
+        <script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+        <script async src="js/script.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header"><img src="images/Header.png" alt="Maseratti"/></div>
+            <div id="content">
+                <div id="nav">
+                    <ul>
+                        <li><a href="index.html" title="Main Page"><img src="images/Logo.jpg" alt="Logo" /></a></li>
+                        <li><a href="Ghibli.html" title="Ghibli" >Ghibli</a></li>
+                        <li><a href="Quattroporte.html" title="Quattroporte" >Quattroporte</a></li>
+                        <li><a href="GranTurismo.html" title="GranTurismo" >GrandTurismo</a></li>
+                    </ul>            
+                    <div id="map"><img src="images/Map.jpg" alt="Road Map" /></div>                
+                </div>
+                <div id="main">
+                    <table>
+                        <tr>
+                            <th id="main_title" colspan="3"><h1>Main</h1></th>
+                        </tr>
+                        <tr>
+                            <td class="small_card"> 
+                                <img src="images/Ghibli.jpg" alt="Ghibli" />
+                                <div class="content">
+                                <small>Business Class</small>
+                                <h2>First Car</h2>
+                                <p>Maseratti Ghibli III is a business-class sedan from italian company Maseratti which became available to buy in second part of 2013</p>
+                                <a href="Ghibli.html" title="Ghibli" >Go!</a>
+                                </div>
+                            </td>
+                            <td class="small_card">
+                                <img src="images/Quatro.jpg" alt="Quattro"/>
+                                <div class="content">
+                                <small>Executive Class</small>
+                                <h2>Second Car</h2>
+                                <p>Maseratti Quattroporte is a executive-class sedan from italian company Maseratti which is manufactured from 1961</p>
+                                <a href="Quattroporte.html" title="Quattroporte" >Go!</a>
+                                </div>                            
+                            </td>
+                            <td class="small_card">
+                                <img src="images/Grand.jpg" alt="GrandTurismo"/>
+                                <div class="content">
+                                <small>Sport Class</small>
+                                <h2>Third Car</h2>
+                                <p>Maseratti GrandTurismo is a sport liftback from italian company Maseratti which is manufactured from 1961</p>
+                                <a href="GranTurismo.html" title="GranTurismo" >Go!</a>
+                                </div>                            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="big_card" colspan="3">
+                                <img src="images/Form.png" alt="Form" />
+                                <form onsubmit="return false" action="/Home/Order" method="post">
+                                    <fieldset>
+                                        <legend>Drawing up of the order</legend>
+                                        <input type="text" name="Name" placeholder="Input your name" required/><br/>
+                                        <input type="tel" name="Tel" placeholder="8-(xxx)-(xxx)-(xxxx)" required pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{4}"/><br/>
+                                        <select name="Car">
+                                            <option value="Ghibli">Ghibli</option>
+                                            <option value="Quattroporte">Quattroporte</option>
+                                            <option value="GranTurismo">GranTurismo</option>
+                                        </select><br/>
+                                        <input type="submit"/>
+                                    </fieldset>                                
+                                </form>
+                            </td>
+                        </tr>
+                    </table>   
+                 </div>            
+            </div>
+            <div id="footer"><b>Copyright</b></div>    
+        </div>            
+    </body>
+</html>
