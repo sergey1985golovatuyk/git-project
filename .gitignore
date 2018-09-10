@@ -1,0 +1,5 @@
+# folder 'logs' should be ignored
+logs/
+
+# all *.txt-type files in 'docs/' folder should be ignored
+docs/*.txt
